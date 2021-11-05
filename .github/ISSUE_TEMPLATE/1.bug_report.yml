@@ -45,6 +45,6 @@ body:
     description: What is the platform that this issue is seen on?
     multiple: true
     options:
-      - label: Android
-      - label: iOS
-      - label: CLI
+      - Android
+      - iOS
+      - CLI
