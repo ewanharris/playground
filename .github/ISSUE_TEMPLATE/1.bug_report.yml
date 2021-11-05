@@ -31,7 +31,7 @@ body:
   attributes:
     label: Reproducible sample
     description: A code sample that reproduces the issue. This could be a standalone block of code, or a link to a git repository, but it must be simple enough to paste/clone, build an app, and reproduce the issue
-    validations:
+  validations:
       required: false
 - type: textarea
   attributes:
