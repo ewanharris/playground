@@ -13,8 +13,8 @@ body:
   attributes:
     label: Description
     description: A description of the issue
-    validations:
-    required: true
+  validations:
+      required: true
 - type: textarea
   attributes:
     label: Expected Behaviour
@@ -27,7 +27,7 @@ body:
     description: What is the actual behaviour of what you are trying to do?
   validations:
       required: true
-- type: textare
+- type: textarea
   attributes:
     label: Reproducible sample
     description: A code sample that reproduces the issue. This could be a standalone block of code, or a link to a git repository, but it must be simple enough to paste/clone, build an app, and reproduce the issue
