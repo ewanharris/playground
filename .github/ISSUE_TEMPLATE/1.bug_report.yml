@@ -1,0 +1,50 @@
+name: Bug Report
+description: Create a bug report the Titanium SDK
+labels: [ bug, needs triage ]
+body:
+- type: checkboxes
+  attributes:
+    label: No open issues
+    description: I have searched and made sure there are no existing issues for the issue I am filing
+    options:
+    - label: I have searched the existing issues
+      required: true
+- type: textarea
+  attributes:
+    label: Description
+    description: A description of the issue
+    validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Expected Behaviour
+    description: What is the expected behaviour of what you are trying to do?
+  validations:
+      required: true
+- type: textarea
+  attributes:
+    label: Actual Behaviour
+    description: What is the actual behaviour of what you are trying to do?
+  validations:
+      required: true
+- type: textare
+  attributes:
+    label: Reproducible sample
+    description: A code sample that reproduces the issue. This could be a standalone block of code, or a link to a git repository, but it must be simple enough to paste/clone, build an app, and reproduce the issue
+    validations:
+      required: false
+- type: textarea
+  attributes:
+    label: Steps to reproduce
+    description: Steps that are required to be taken to reproduce the issue
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: Platform
+    description: What is the platform that this issue is seen on?
+    multiple: true
+    options:
+      - label: Android
+      - label: iOS
+      - label: CLI
