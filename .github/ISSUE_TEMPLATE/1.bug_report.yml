@@ -10,7 +10,7 @@ body:
     value: Leaving secions incomplete might mean that your issue is closed or moved to GitHub discussions
 - type: checkboxes
   attributes:
-    label: No open issues
+    label: No existing issues
     description: I have searched and made sure there are no existing issues for the issue I am filing
     options:
     - label: I have searched the existing issues
