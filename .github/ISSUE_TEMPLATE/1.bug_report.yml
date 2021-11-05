@@ -2,6 +2,12 @@ name: Bug Report
 description: Create a bug report the Titanium SDK
 labels: [ bug, needs triage ]
 body:
+- type: markdown
+  attributes:
+    value: Thank you for the time you have taken to file a bug report! Please make sure to ensure you have filled this form out as best you can.
+- type: markdown
+  attributes:
+    value: Leaving secions incomplete might mean that your issue is closed or moved to GitHub discussions
 - type: checkboxes
   attributes:
     label: No open issues
@@ -48,3 +54,8 @@ body:
       - Android
       - iOS
       - CLI
+- type: input
+  attributes:
+    label: SDK version you are using
+  validations:
+    required: true
