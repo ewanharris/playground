@@ -1,8 +1,3 @@
----
-name: Report a Bug
-about: Create a report to help us improve Titanium
----
-
 <!-- Please use the proper issue forms to file your issue. Issues opened not using forms could be missing critical information that will help your issue get fixed -->
 
 ### Describe the bug
