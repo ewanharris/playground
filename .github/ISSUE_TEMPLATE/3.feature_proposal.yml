@@ -1,5 +1,5 @@
 name: Feature Proposal
-description: Propose a new feature or an improvement for the SDK
+description: Propose a new feature or an improvement for Titanium SDK
 labels: [ feature, needs triage ]
 body:
 - type: markdown
@@ -7,8 +7,7 @@ body:
     value: Thank you for the time you have taken to file a feature proposal! Please make sure to ensure you have filled this form out as best you can.
 - type: checkboxes
   attributes:
-    label: No existing issues
-    description: I have searched and made sure there are no existing issues for the issue I am filing
+    label: I have searched and made sure there are no existing issues for the issue I am filing
     options:
     - label: I have searched the existing issues
       required: true

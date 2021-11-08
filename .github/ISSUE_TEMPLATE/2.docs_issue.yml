@@ -10,16 +10,9 @@ body:
     value: If you have the time and are interested, why not make a PR that fixes the issue.
 - type: checkboxes
   attributes:
-    label: No existing issues
-    description: I have searched and made sure there are no existing issues for the issue I am filing
+    label: I have searched and made sure there are no existing issues for the issue I am filing
     options:
     - label: I have searched the existing issues
-      required: true
-- type: textarea
-  attributes:
-    label: Description
-    description: A description of the issue
-  validations:
       required: true
 - type: input
   attributes:
@@ -27,6 +20,12 @@ body:
     description: What is the URL for the docs page?
   validations:
     required: true
+- type: textarea
+  attributes:
+    label: Description
+    description: A description of the issue
+  validations:
+      required: true
 - type: textarea
   attributes:
     label: Suggestion

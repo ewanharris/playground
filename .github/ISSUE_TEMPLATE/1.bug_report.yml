@@ -1,5 +1,5 @@
 name: Bug Report
-description: Create a bug report the Titanium SDK
+description: Create a bug report for the Titanium SDK
 labels: [ bug, needs triage ]
 body:
 - type: markdown
@@ -10,8 +10,7 @@ body:
     value: Leaving secions incomplete might mean that your issue is closed or moved to GitHub discussions
 - type: checkboxes
   attributes:
-    label: No existing issues
-    description: I have searched and made sure there are no existing issues for the issue I am filing
+    label: I have searched and made sure there are no existing issues for the issue I am filing
     options:
     - label: I have searched the existing issues
       required: true
