@@ -29,6 +29,16 @@ jobs:
               pull_number: number,
             });
             return pr.data.head.sha
+      - name: Post comment
+        uses: actions/github-script@v6
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `Tests are running at ${github.server_url}/${github.repository}/actions/runs/${github.run_id}`
+            })
 
   Check-For-Changes:
     name: Check for changes
