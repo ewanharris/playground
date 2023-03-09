@@ -37,7 +37,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `Tests are running at https://${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`
+              body: `Tests are running at https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`
             })
 
   Check-For-Changes:
