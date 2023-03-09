@@ -12,11 +12,11 @@ jobs:
   Check-Comments:
     name: Check for comments
     runs-on: ubuntu-latest
-    # if: ${{ github.event.issue.pull_request && github.event.comment.body == '/test' }}
     outputs:
       sha: ${{ steps.sha.outputs.result }}
     steps:
       - name: Get PR SHA
+        if: ${{ github.event.issue.pull_request && github.event.comment.body == '/test' }}  
         id: sha
         uses: actions/github-script@v6
         with:
