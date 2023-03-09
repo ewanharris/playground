@@ -12,7 +12,7 @@ jobs:
   Check-Comments:
     name: Check for comments
     runs-on: ubuntu-latest
-    if: ${{ github.event.issue.pull_request && github.event.comment.body == '/test' }}
+    # if: ${{ github.event.issue.pull_request && github.event.comment.body == '/test' }}
     outputs:
       sha: ${{ steps.sha.outputs.result }}
     steps:
@@ -33,7 +33,6 @@ jobs:
   Check-For-Changes:
     name: Check for changes
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'schedule' }}
     outputs:
       changes: ${{ steps.commits.outputs.changes }}
     steps:
