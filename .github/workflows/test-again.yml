@@ -1,0 +1,18 @@
+name: test-again
+
+on:
+  release:
+    types: [created]
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - run: cat test.txt
+    - run: echo "hello!"
