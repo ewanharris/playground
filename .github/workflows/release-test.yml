@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # v4.1.2
 
       - id: extract-changelog
-        uses: dahlia/submark@7d44d75a4dcfd351258491f26898e836b0521ce0 # v0.3.1
+        uses: dahlia/submark@0.3.1
         with:
           input-file: CHANGELOG.md
           heading-level: 2
