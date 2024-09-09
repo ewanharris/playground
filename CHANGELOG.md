@@ -8,7 +8,7 @@ Try to keep listed changes to a concise bulleted list of simple explanations of 
 
 ## [Unreleased]
 
-## [1.0.1] - 2024-08-13
+## [1.0.3] - 2024-08-13
 
 [Full changelog](https://github.com/ewanharris/playground/compare/v1.0.0...v1.0.1)
 
