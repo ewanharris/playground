@@ -1,0 +1,13 @@
+name: Test tagging
+
+on:
+  workflow_dispatch:
+  push:
+    tags: '**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo 
+        run: echo ${{ github.event }}
