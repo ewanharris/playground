@@ -10,4 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo
-        run: node -e 'console.log(${{ github.event }})'
+        run: |
+          node -e 'console.log(process.env.EVENT)'
+          echo "$EVENT"
+        env:
+          EVENT: ${{ github.event }}
