@@ -12,6 +12,6 @@ jobs:
       - name: echo
         run: |
           node -e 'console.log(process.env.EVENT)'
-          echo "$EVENT"
+          echo "${{ env.EVENT }}"
         env:
           EVENT: ${{ github.event }}
