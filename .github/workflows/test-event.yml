@@ -9,5 +9,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: echo 
-        run: echo ${{ github.event }}
+      - name: echo
+        run: node -e 'console.log(${{ github.event }})'
